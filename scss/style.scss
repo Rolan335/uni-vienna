@@ -127,7 +127,6 @@ $blue: #2D3E50;
 //hero
 .hero{
     height: 695px;
-    object-fit: contain;
     background: url("../img/hero/1.png") 50% 50% / cover;
     position: relative;
     overflow: hidden;
@@ -141,7 +140,7 @@ $blue: #2D3E50;
         width: 1500px;
         height: 1000px;
         bottom: 0;
-        left: 41%;
+        left: 42%;
         transform: skewX(-30deg);
         background-color: rgba(134,188,66,0.5);
     }
