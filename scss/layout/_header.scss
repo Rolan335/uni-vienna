@@ -1,0 +1,77 @@
+//header
+.header-top{
+    height: 75px;
+    background-color: $blue;
+    overflow: hidden;
+    &__rectangle{
+        position: absolute;
+        bottom: 0;
+        right: -10px;
+        width: 39.5%;
+        height: 30px;
+        background-color: $green;
+        transform: skewX(-30deg);
+    }
+    &__link{
+        font-weight: 600;
+        font-size: 13px;
+        transition: .3s;
+        &:hover{
+            color: $green;
+        }
+    }
+}
+.header-bottom{
+    &__logo{
+        font-weight: 800;
+        font-size: 45px;
+        text-transform: uppercase;
+        color: $green;
+        margin-left: 15px;
+    }
+    .navbar-nav{
+        margin-right: 30%;
+    }
+    .navbar-collapse{
+        z-index: 100;
+        background-color: #fff;
+        padding-left: 10px;
+    }
+    .nav-item{
+        color: #111111;
+        font-weight: 600;
+        font-size: 13px;
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+        transition: .3s;
+        &:hover{
+            .nav-item__rectangle-bottom{
+                transform: translateX(0);
+            }
+            .nav-link{
+                color: $green;
+            }
+        }
+        &__rectangle-bottom{
+            width: 28px;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 8px;
+            transform: translateX(-36px);
+            background-color: $green;
+            transition: .2s;
+        }
+    }
+    .navbar-toggler{
+    border: none;
+    &:focus,
+    &:active,
+    .navbar-toggler-icon:focus {
+    outline: none ;
+    box-shadow: none;
+    border: none;
+        }
+    }
+}

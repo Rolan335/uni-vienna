@@ -1,0 +1,72 @@
+//hero
+.hero{
+    height: 695px;
+    background: url("../img/hero/1.png") 50% 50% / cover;
+    position: relative;
+    overflow: hidden;
+    @include lg{
+        text-align: center;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        top: -75px;
+        width: 1500px;
+        height: 1000px;
+        bottom: 0;
+        left: 42%;
+        transform: skewX(-30deg);
+        background-color: rgba(134,188,66,0.5);
+    }
+    &__content{
+        width: 550px;
+        position: absolute;
+        top: 150px;
+        right: 10%;
+        @include lg{
+            top: 150px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        @include md{
+            width: 320px;
+        }
+    }
+    &__title{
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 62px;
+        border-bottom: 8px solid #fff;
+        @include lg{
+            font-size: 32px;
+            line-height: 34px;
+            font-weight: 600;
+            padding-bottom: 31px;
+            border-bottom-width: 6px;
+        }
+    }
+    &__subtitle{
+        margin-top: 15px;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 30px;
+        @include lg{
+            font-size: 20px;
+            margin-top: 25px;
+        }
+    }
+    &__text{
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 47px;
+        width: 600px;
+        margin-bottom: 0;
+        @include lg{
+            font-size: 30px;
+            width: 100%;
+        }
+    }
+    &__btn{
+        margin-top: 32px;
+    }
+}
