@@ -60,9 +60,11 @@ a{
         overflow: hidden;
         transition: .3s;
         &:hover{
-            color: #86BC42;
             .nav-item__rectangle-bottom{
                 transform: translateX(0);
+            }
+            .nav-link{
+                color: #86BC42;
             }
         }
         &__rectangle-bottom{
