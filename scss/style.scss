@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+    &:visited{
+        color: inherit;
+    }
+}
+
+//header
+.header-top{
+    height: 75px;
+    background-color: #2D3E50;
+    overflow: hidden;
+    &__rectangle{
+        position: absolute;
+        bottom: 0;
+        right: -10px;
+        width: 39.5%;
+        height: 30px;
+        background-color: #86BC42;
+        transform: skewX(-30deg);
+    }
+    &__link{
+        font-weight: 600;
+        font-size: 13px;
+        transition: .3s;
+        &:hover{
+            color: #86bc42;
+        }
+    }
+}
+.header-bottom{
+    height: 75px;
+    &__title{
+        font-weight: 800;
+        font-size: 45px;
+        text-transform: uppercase;
+        color: #86BC42;
+    }
+    .navbar-nav{
+        margin-right: 30%;
+    }
+    .nav-item{
+        color: #111111;
+        font-weight: 600;
+        font-size: 13px;
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+        transition: .3s;
+        &:hover{
+            color: #86BC42;
+            .nav-item__rectangle-bottom{
+                transform: translateX(0);
+            }
+        }
+        &__rectangle-bottom{
+            width: 28px;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 8px;
+            transform: translateX(-36px);
+            background-color: #86BC42;
+            transition: .2s;
+        }
+    }
+    .navbar-toggler{
+    border: none;
+    &:focus,
+    &:active,
+    .navbar-toggler-icon:focus {
+    outline: none ;
+    box-shadow: none;
+    border: none;
+        }
+    }
+}
