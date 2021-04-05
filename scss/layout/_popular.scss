@@ -11,8 +11,12 @@
         height: 550px;
         padding: 0 44px;
         border-bottom: 4px solid $green;
+        position: relative;
     }
-    &__img{
+    &__img-wrapper{
+        width: 330px;
+        height: 206px;
+        overflow: hidden;
         position: relative;
         bottom: 27px;
     }
@@ -45,6 +49,9 @@
     }
     .btn-blue{
         width: 240px;
-        margin-top: 20px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20px;
     }
 }   

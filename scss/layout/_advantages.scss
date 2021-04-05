@@ -1,0 +1,35 @@
+.advantages{
+    background-color: $blue;
+    padding-top: 60px;;
+    .block-title{
+        height: 100px;
+        &__title{
+            color: #fff
+        }
+        &::before,
+        &::after{
+            background-color: #fff;
+        }
+    }
+    &__row{
+        margin-top: 75px;
+    }
+    &__column{
+        min-width: 320px;
+        min-height: 535px;
+        text-align: center;
+    }
+    &__title{
+        font-size: 30px;
+        font-weight: 600;
+        height: 25px;
+        margin-top: 16px;
+    }
+    &__text{
+        text-align: left;
+        margin-top: 100px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+}
