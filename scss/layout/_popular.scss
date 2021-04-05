@@ -1,14 +1,16 @@
 .popular{
     padding-top: 110px;
     overflow: hidden;
+    padding-bottom: 50px;
     &__column{
         max-width: 400px;
+        height: 370px !important;
         margin-top: 90px;
         background: #F6F6F6;
         color: $blue;
         height: 550px;
         padding: 0 44px;
-        border-bottom: 2px solid $green;
+        border-bottom: 4px solid $green;
     }
     &__img{
         position: relative;
@@ -40,5 +42,9 @@
             background-color: $blue;
             color: #fff;
         }
+    }
+    .btn-blue{
+        width: 240px;
+        margin-top: 20px;
     }
 }   

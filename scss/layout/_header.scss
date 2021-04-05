@@ -22,12 +22,9 @@
     }
 }
 .header-bottom{
-    &__logo{
-        font-weight: 800;
-        font-size: 45px;
-        text-transform: uppercase;
-        color: $green;
-        margin-left: 15px;
+    height: 95px;
+    .navbar{
+        padding: 0;
     }
     .navbar-nav{
         margin-right: 30%;
@@ -45,6 +42,7 @@
         position: relative;
         overflow: hidden;
         transition: .3s;
+        margin-right: 10px;
         &:hover{
             .nav-item__rectangle-bottom{
                 transform: translateX(0);

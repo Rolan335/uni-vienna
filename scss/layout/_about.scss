@@ -2,10 +2,12 @@
 .about{
     min-height: 375px;
     background: url("../img/about/1.png") 0% 0% / cover;
-    position: relative;
     margin-top: 75px;
     padding-top: 90px;
-    overflow: hidden;
+    position: relative;
+    .container{
+    position: relative;
+    }
     &::before{
         content: '';
         background-color: $green;
@@ -19,15 +21,13 @@
     &__title{
         position: absolute;
         z-index: 1;
-        top: 5px;
-        left: 9%;
-        font-family: Montserrat;
+        top: -90px;
+        left: 9px;
         font-size: 30px;
         font-weight: 500;
         line-height: 39px;
         text-transform: uppercase;
         @include md{
-            left: 2%;
             font-size: 24px;
         }
     }

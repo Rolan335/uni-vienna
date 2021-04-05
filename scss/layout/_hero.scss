@@ -1,33 +1,38 @@
 //hero
 .hero{
     height: 695px;
-    background: url("../img/hero/1.png") 50% 50% / cover;
     position: relative;
+    top: 75px;
     overflow: hidden;
     @include lg{
         text-align: center;
     }
+    &__bg{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -2;
+        width: 100%;
+    }
     &::before{
         content: '';
         position: absolute;
-        top: -75px;
+        top: 0;
         width: 1500px;
         height: 1000px;
         bottom: 0;
         left: 42%;
         transform: skewX(-30deg);
         background-color: rgba(134,188,66,0.5);
+        z-index: -1;
     }
     &__content{
         width: 550px;
-        position: absolute;
-        top: 150px;
-        right: 10%;
-        @include lg{
-            top: 150px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
+        position: relative;
+        top: 120px;
+        left: 60%;
         @include md{
             width: 320px;
         }
