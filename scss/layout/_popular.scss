@@ -3,7 +3,7 @@
     overflow: hidden;
     padding-bottom: 50px;
     &__column{
-        max-width: 400px;
+        width: 420px;
         height: 370px !important;
         margin-top: 90px;
         background: #F6F6F6;
@@ -14,8 +14,8 @@
         position: relative;
     }
     &__img-wrapper{
-        width: 330px;
-        height: 206px;
+        max-width: 330px;
+        max-height: 206px;
         overflow: hidden;
         position: relative;
         bottom: 27px;

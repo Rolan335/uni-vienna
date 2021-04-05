@@ -4,19 +4,24 @@
     background: url("../img/about/1.png") 0% 0% / cover;
     margin-top: 75px;
     padding-top: 90px;
+    padding-bottom: 30px;
     position: relative;
     .container{
     position: relative;
     }
-    &::before{
+    &::after{
         content: '';
         background-color: $green;
         width: 800px;
         height: 60px;
+        max-width: 110%;
         position: absolute;
         top: -10px;
         left: -30px;
         transform: skewX(30deg);
+        @include lg{
+            left: -100px;
+        }
     }
     &__title{
         position: absolute;

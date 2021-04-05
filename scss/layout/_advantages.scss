@@ -1,6 +1,8 @@
 .advantages{
     background-color: $blue;
-    padding-top: 60px;;
+    padding-top: 60px;
+    overflow: hidden;
+    padding-bottom: 40px;
     .block-title{
         height: 100px;
         &__title{
@@ -13,11 +15,18 @@
     }
     &__row{
         margin-top: 75px;
+        @include lg{
+            margin-top: 50px;
+        }
     }
     &__column{
         min-width: 320px;
         min-height: 535px;
         text-align: center;
+        @include lg{
+            width: 250px;
+            min-height: 300px;
+        }
     }
     &__title{
         font-size: 30px;
