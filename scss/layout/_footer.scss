@@ -16,14 +16,14 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        }
         &__link{
             margin-left: 5px;
             transition: .3s;
             color: #fff;
             &:hover{
-                color: $green;
+                color: $green !important;
             }
+        }
     }
     &__copyright{
         padding: 10px 0;
