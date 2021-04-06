@@ -4,7 +4,7 @@
     position: relative;
     padding-bottom: 70px;
     overflow: hidden;
-    background: url("/img/hero/1.png") 50% 50% / cover;
+    background: url("../img/hero/1.png") 50% 50% / cover;
     @include lg{
         text-align: center;
         background-position: 0 0;
@@ -81,4 +81,9 @@
     &__btn{
         margin-top: 32px;
     }
+}
+@media (min-width: 1440px) {
+    .hero::before {
+        right: -51%;
+        }
 }

@@ -26,9 +26,12 @@
             }
     }
     &__copyright{
+        padding: 10px 0;
         margin-top: 40px;
         background-color: $green;
-        height: 40px;
+        min-height: 40px;
+        text-align: center;
+        line-height: 25px;
         display: flex;
         justify-content: center;
         align-items: center;
