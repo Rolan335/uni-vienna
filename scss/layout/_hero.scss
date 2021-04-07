@@ -17,7 +17,7 @@
         position: absolute;
         top: -75px;
         right: -74%;
-        background-color: rgba(134, 188, 66, 0.5);
+        background-color: rgba(225, 80, 80, 0.5);
         width: 2000px;
         height: 1000px;
         transform: skewX(-30deg);
@@ -82,7 +82,7 @@
         margin-top: 32px;
     }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1560px) {
     .hero::before {
         right: -51%;
         }
