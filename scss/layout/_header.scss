@@ -16,6 +16,8 @@
             display: none;
         }
     }
+    &__link-wrapper{
+    }
     &__link{
         font-weight: 600;
         font-size: 13px;
@@ -28,14 +30,11 @@
 .header-bottom{
     height: 95px;
     &__logo-wrapper{
+        width: 245px;
         position: relative;
         left: 6.3%;
         display: flex;
         align-items: center;
-    }
-    &__logo{
-        width: 235px;
-        height: 55px;
         z-index: 1000;
     }
     .navbar{
