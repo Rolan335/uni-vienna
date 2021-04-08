@@ -18,8 +18,14 @@
     &__col_1{
         position: relative;
     }
+    .slider-col{
+    @include lg{
+        width: 50%;
+        margin: auto;
+    }
+    }
     &__column{
-        width: 420px;
+        width: 400px !important;
         height: 370px !important;
         margin-top: 90px;
         background: #F6F6F6;
@@ -40,6 +46,9 @@
         overflow: hidden;
         position: relative;
         bottom: 27px;
+        img{
+            width: 100% !important;
+        }
     }
     &__name{
         font-size: 20px;
